@@ -80,6 +80,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 
   list-style-type: none;
   padding: 0;
@@ -301,13 +302,12 @@ button.loading {
 .photo-container::before {
   position: absolute;
   content: "";
-  top: 50%;
-  left: 21px;
+  top: 120px;
+  left: 22px;
   width: 312px;
   height: 312px;
   background-color: #ffcbd8;
   border-radius: 50%;
-  transform: translateY(-50%);
   z-index: -1;
 }
 
@@ -319,11 +319,10 @@ button.loading {
 
 .slider-controls {
   position: absolute;
-  top: 50%;
+  top: 257px;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  transform: translateY(-50%);
 }
 
 .slider-button {
@@ -382,6 +381,7 @@ button.loading {
   align-self: center;
   justify-self: center;
   width: 100px;
+  transform: translateY(17px);
 }
 
 .minor-photo-container::before {
@@ -585,6 +585,7 @@ button.loading {
 .product-features {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
 }
 
@@ -602,6 +603,7 @@ button.loading {
   background-color: #ff2f64;
   border-radius: 26px;
   border: 2px solid #ff2f64;
+  cursor: pointer;
 }
 
 .cart-button:hover {
@@ -639,6 +641,7 @@ button.loading {
   margin-top: 80px;
   padding: 24px;
   border-radius: 16px;
+  background-color: #f1f2d6;
   background-image: url("../images/advantages-background.jpg");
 }
 
@@ -708,13 +711,14 @@ button.loading {
   padding: 32px 235px 32px 32px;
   min-height: 224px;
   border-radius: 16px;
+  background-color: #ffe6e6;
   background-image: url("../images/blog-news-background.jpg");
   background-size: cover;
   box-sizing: border-box;
 }
 
 .blog-news-info {
-  margin-bottom: 12px;
+  margin: 0 0 12px;
   line-height: 20px;
 }
 
@@ -729,6 +733,7 @@ button.loading {
 
 .subscribe {
   padding: 6px;
+  background-color: #ffe6e6;
   background-image: url("../images/subscribe-background.jpg");
   background-size: cover;
   border-radius: 16px;
@@ -821,12 +826,13 @@ button.loading {
   display: grid;
   grid-template-columns: repeat(2, 500px);
   gap: 42px;
+  background-color: #ffe6e6;
   background-image: url("../images/delivery-background.jpg");
   background-size: cover;
   border-radius: 16px;
 }
 
-.delivery-content {
+.delivery-content-column {
   padding: 103px 93px 99px 36px;
 }
 
@@ -837,4 +843,92 @@ button.loading {
 
 .delivery-info {
   margin: 0;
+}
+
+.delivery-form-column {
+  padding: 40px 40px 42px;
+  background-color: #fcfcfc;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.delivery-form-text {
+  margin: 0 0 32px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.delivery-label {
+  margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.form-group-address {
+  grid-column: 1/-1;
+}
+
+.delivery-form .comunication-button {
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-top: 12px;
+}
+
+.contacts {
+  margin-top: 80px;
+  padding: 64px 763px 64px 64px;
+  background-color: #ffe6e6;
+  background-image: url("../images/contacts-background.jpg");
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.contacts-content {
+  padding: 40px 40px 42px;
+  background: #fcfcfc;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.contacts-title {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.contacts-information {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #2d3440;
+}
+
+.address {
+  margin-bottom: 24px;
+  font-style: normal;
+}
+
+.phone {
+  text-decoration: none;
+}
+
+.contacts-schedule {
+  margin: 0 0 32px;
+  font-size: 14px;
+  line-height: 20px;
 }
