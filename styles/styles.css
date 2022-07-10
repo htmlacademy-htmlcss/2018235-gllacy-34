@@ -1339,10 +1339,15 @@ button.loading {
   outline-offset: -2px;
 }
 
+.catalog-filter-item {
+  line-height: 20px;
+}
+
 .control-label {
   position: relative;
   display: block;
   padding-left: 24px;
+  align-items: center;
 }
 
 .control-mark {
@@ -1353,7 +1358,7 @@ button.loading {
   height: 16px;
   display: flex;
   border-radius: 50%;
-  border: 1px solid #000000;
+  border: 1.4px solid #2d3440;
   box-sizing: border-box;
 }
 
@@ -1371,7 +1376,7 @@ button.loading {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #2d3440;
 }
 
 .control-label:hover .control-input[type="radio"]:checked + .control-mark::after {
@@ -1387,6 +1392,63 @@ button.loading {
   line-height: 20px;
   color: #2d3440;
 }
+
+.control-input[type="checkbox"] + .control-mark {
+  border-radius: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  display: none;
+}
+
+.control-mark-checked {
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  fill: #2d3440;
+}
+
+.control-input[type="checkbox"]:checked ~ .control-mark-checked {
+  display: block;
+}
+
+.control-label:hover .control-input[type="checkbox"]:checked ~ .control-mark-checked {
+  fill: #fcfcfc;
+}
+
+.control-input[type="checkbox"]:checked:disabled ~ .control-mark-checked {
+  fill: rgba(45, 52, 64, 0.5);
+}
+
+.control-button {
+  margin-left: -8px;
+  align-self: end;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  min-width: 185px;
+  font-size: 14px;
+  line-height: 20px;
+  background: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #fcfcfc;
+}
+
+.control-button:hover {
+  background: #fcfcfc;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.control-button:active {
+  background: rgba(252, 252, 252, 0.5);
+  outline: 2px solid rgba(252, 252, 252, 0.5);
+}
+
+.control-button:focus {
+  background: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #2d3440;
+}
+
+.control-button:disabled {}
 
 
 
