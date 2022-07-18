@@ -545,7 +545,7 @@ button.loading {
 }
 
 .popular-title {
-  margin-bottom: 107px;
+  margin-bottom: 56px;
 }
 
 .product-list {
@@ -554,7 +554,7 @@ button.loading {
   row-gap: 91px;
   column-gap: 30px;
   margin: 0;
-  padding: 0;
+  padding: 51px 0 0;
   list-style-type: none;
 }
 
@@ -1339,6 +1339,10 @@ button.loading {
   outline-offset: -2px;
 }
 
+.checkbox-list {
+  padding: 10px 24px;
+}
+
 .catalog-filter-item {
   line-height: 20px;
 }
@@ -1422,7 +1426,8 @@ button.loading {
 }
 
 .control-button {
-  margin-left: -8px;
+  margin-left: -6px;
+  margin-bottom: 2px;
   align-self: end;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1448,10 +1453,80 @@ button.loading {
   outline: 2px solid #2d3440;
 }
 
-.control-button:disabled {}
-
-
+.control-button:disabled {
+  font-weight: 700;
+  color: #2d3440;
+  opacity: 0.4;
+}
 
 .catalog {
-  padding: 51px 0 40px;
+  margin-bottom: 40px;
+}
+
+.catalog-products-list {
+  margin-bottom: 16px;
+}
+
+.pagination-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 41px 0;
+}
+
+.pagination-container .button {
+  grid-column-start: 2;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+  text-decoration: none;
+  line-height: 20px;
+  color: #2d3440;
+  border-radius: 50%;
+}
+
+.pagination-arrow {
+  background: url("../images/pagination-arrow.svg") no-repeat center;
+}
+
+.pagination-item:first-child .pagination-arrow {
+  transform: rotate(180deg);
+}
+
+.last-item-arrow {
+  opacity: 0.3;
+}
+
+.pagination-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-link:active {
+  outline: 1px solid #fcfcfc;
+  outline-offset: -1px;
+}
+
+.pagination-link:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #2d3440;
+  outline-offset: -1px;
+}
+
+.pagination-link-active {
+  background-color: #fcfcfc;
 }
