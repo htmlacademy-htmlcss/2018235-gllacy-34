@@ -597,6 +597,7 @@ label + label .navigation-log-in-input {
   margin: 0;
   padding: 0;
   list-style: none;
+  min-height: 507px;
 }
 
 .product-ad-item {
@@ -605,7 +606,7 @@ label + label .navigation-log-in-input {
 
 .product-ad-block {
   margin: auto 0;
-  max-width: 470px;
+  max-width: 434px;
   padding-left: 70px;
   padding-right: 63px;
 }
