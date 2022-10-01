@@ -215,7 +215,7 @@ body {
 .navigation-user-link {
   color: #2d3440;
   text-decoration: none;
-  padding: 5px 19px 6px 38px;
+  padding: 6px 20px 6px 38px;
   display: block;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
@@ -278,13 +278,13 @@ body {
   background-position: center;
   background-image: var(--img-header);
   left: 14px;
-  top: 6px;
+  top: 8px;
 }
 
 .navigation-log-in-svg {
   position: absolute;
-  left: 14px;
-  top: 6px;
+  left: 16px;
+  top: 8px;
 }
 
 .navigation-log-in-block {
@@ -515,8 +515,8 @@ label + label .navigation-log-in-input {
   line-height: 20px;
   color: #2d3440;
   font-weight: 700;
-  padding-right: 3px;
-  padding-left: 3px;
+  padding-right: 1px;
+  padding-left: 8px;
 }
 
 .navigation-link-active,
@@ -631,6 +631,35 @@ label + label .navigation-log-in-input {
 .product-ad-button {
   width: 139px;
   height: 44px;
+}
+
+.product-ad-block-next{
+  display: flex;
+  align-items: center;
+  margin-left: 66px;
+  padding-top: 10px;
+  gap: 49px;
+}
+
+.product-ad-item-next{
+  position: relative;
+}
+
+.product-ad-item-next::before{
+  content: "";
+  position: absolute;
+  background-color:rgb(255, 203, 216, 0.4);
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.product-ad-image-next{
+  display: block;
+  opacity: 0.4;
 }
 
 .button {
@@ -1303,7 +1332,7 @@ label + label .navigation-log-in-input {
   line-height: 22px;
   font-weight: 400;
   color: #565c66;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
   padding-top: 1px;
 }
 
@@ -1486,7 +1515,6 @@ textarea.modal-input {
   display: block;
   width: min-content;
   margin-left: -3px;
-  padding-bottom: 6px;
   outline: none;
 }
 
