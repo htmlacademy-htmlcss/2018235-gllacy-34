@@ -108,20 +108,23 @@ body {
 }
 
 .navigation-link:hover,
-.navigation-user-link:hover {
+.navigation-user-link:hover,
+.fillter-button:hover {
   background: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
 }
 
 .navigation-link:focus,
-.navigation-user-link:focus {
+.navigation-user-link:focus,
+.fillter-button:focus {
   background: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2d3440;
   border-radius: 30px;
 }
 
 .navigation-link:active,
-.navigation-user-link:active {
+.navigation-user-link:active,
+.fillter-button:active {
   background: #fcfcfc;
   border-radius: 30px;
 }
@@ -268,7 +271,6 @@ body {
   display: block;
 }
 
-.navigation-user-item:nth-of-type(3) .navigation-user-link::after,
 .navigation-user-item:nth-of-type(4) .navigation-user-link::after {
   content: "";
   position: absolute;
@@ -276,7 +278,7 @@ body {
   height: 16px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: var(--img-header);
+  background-image: url("../image/icon/cart.svg");
   left: 14px;
   top: 8px;
 }
@@ -476,10 +478,6 @@ label + label .navigation-log-in-input {
   padding: 0;
 }
 
-.navigation-user-basket {
-  --img-header: url("../image/icon/cart.svg");
-}
-
 .navigation-log-in-link {
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -564,7 +562,7 @@ label + label .navigation-log-in-input {
   background-color: rgba(252, 252, 252, 0.3);
   background-position: center;
   width: 38px;
-  height: 38px;
+  min-height: 38px;
   padding-top: 4px;
   cursor: pointer;
   color: #fcfcfc;
@@ -630,10 +628,10 @@ label + label .navigation-log-in-input {
 
 .product-ad-button {
   width: 139px;
-  height: 44px;
+  min-height: 44px;
 }
 
-.product-ad-block-next{
+.product-ad-block-next {
   display: flex;
   align-items: center;
   margin-left: 66px;
@@ -641,23 +639,23 @@ label + label .navigation-log-in-input {
   gap: 49px;
 }
 
-.product-ad-item-next{
+.product-ad-item-next {
   position: relative;
 }
 
-.product-ad-item-next::before{
+.product-ad-item-next::before {
   content: "";
   position: absolute;
-  background-color:rgb(255, 203, 216, 0.4);
+  background-color: rgb(255, 203, 216, 0.4);
   width: 100px;
   height: 100px;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
 
-.product-ad-image-next{
+.product-ad-image-next {
   display: block;
   opacity: 0.4;
 }
@@ -831,7 +829,7 @@ label + label .navigation-log-in-input {
 
 .discount-button {
   width: 176px;
-  height: 44px;
+  min-height: 44px;
 }
 
 .discount-block:first-of-type::before {
@@ -1110,7 +1108,7 @@ label + label .navigation-log-in-input {
   padding-top: 26px;
   box-sizing: border-box;
   width: 558px;
-  height: 212px;
+  height: 100%;
 }
 
 .news-follow-text {
@@ -1306,7 +1304,7 @@ label + label .navigation-log-in-input {
 .about-us {
   border-radius: 16px;
   width: 1170px;
-  height: 492px;
+  min-height: 492px;
   background: url("../image/backgrounds/about_us.jpg") no-repeat;
   background-position: bottom -83px right;
   background-size: cover;
@@ -1747,7 +1745,7 @@ textarea.modal-input {
   background: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
   min-width: 383px;
-  height: 36px;
+  min-height: 36px;
   align-items: center;
   box-sizing: border-box;
 }
@@ -1775,7 +1773,7 @@ textarea.modal-input {
 .catalog-input[type="radio"] ~ .control-mark {
   position: absolute;
   width: 16px;
-  height: 16px;
+  min-height: 16px;
   box-sizing: border-box;
   background-color: inherit;
   border: 1px solid #000000;
@@ -1847,7 +1845,7 @@ textarea.modal-input {
 
 .filter-checkbox {
   padding: 9px 24px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .fillter-button {
@@ -1855,7 +1853,7 @@ textarea.modal-input {
   border-radius: 20px;
   background: rgba(252, 252, 252, 0.3);
   min-width: 190px;
-  height: 38px;
+  min-height: 38px;
   margin: auto 16px 2px;
   font-weight: 700;
   font-size: 14px;
@@ -1931,7 +1929,7 @@ textarea.modal-input {
 
 .catalog-pagination-wrapper {
   display: flex;
-  height: 126px;
+  min-height: 126px;
   align-items: flex-start;
   max-width: 1170px;
   padding-top: 27px;
