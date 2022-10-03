@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Екатерина Иванова](https://up.htmlacademy.ru/htmlcss/34/user/2018235).
-* Наставник: `Неизвестно`.
+* Студент: [Danylo Voloshyn](https://up.htmlacademy.ru/htmlcss/34/user/2101121).
+* Наставник: [Саша Сударев](https://htmlacademy.ru/profile/id1152185)
 
 ---
 
